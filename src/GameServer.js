@@ -504,7 +504,7 @@ GameServer.prototype.splitCells = function(client) {
         // Calculate mass of splitting cell
         var newMass = cell.mass / 2;
         cell.mass = newMass;
-	    removeNode(cell);
+this.removeNode(e);
         // Create cell
         split = new Entity.PlayerCell(this.getNextNodeId(), client, startPos, newMass);
         split.setAngle(angle);
